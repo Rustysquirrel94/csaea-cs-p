@@ -97,4 +97,65 @@ print(end + "\n")
 print(math.sqrt(16))
 print(math.ceil(3.65))
 print(math.floor(3.65))
-print(math.pow(3, 4))
+print(math.pow(3,4))
+
+# Conditionals
+
+#  if       elif      else
+
+t = True 
+f = False
+
+if f:
+   print("Reached the first condition")
+
+elif f:
+ print("reached second condition")
+
+else:
+   print("reached else")
+
+h = True
+
+if 1 > 1 and 1 == 1:
+   print("Reached the first condition")
+
+elif 6 == 7 or 3 != 3:
+ print("reached second condition")
+elif 10 != 10:
+ print('Third condition')
+else:
+ print("reached else")
+
+
+
+#  Lists
+# A list can hold any type, and can grow or shrink at any time
+
+# index: 0 1  2 3  4   5  6
+nums = [3,89,32,43,84,38,92]
+print(nums)
+print(nums[2])
+print(nums[-1])
+# get 43 using negatives
+print(nums[-4])
+print(nums[0] + nums[2])
+nums[1] = 289
+print(nums)
+
+#  List Methods
+# Special Built in methods
+
+words = []
+
+words.append("The cow jumps")
+words.append("over the")
+words.append("moon")
+print(words)
+words.remove("The cow jumps")
+words.insert(0, "!")
+print(words)
+words[2] = "the sun"
+length = len(words)
+print(words)
+print(length)
