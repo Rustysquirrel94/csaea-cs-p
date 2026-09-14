@@ -159,3 +159,56 @@ words[2] = "the sun"
 length = len(words)
 print(words)
 print(length)
+
+
+
+# Iteration (LOOPS)
+
+# For Loop
+# a For loop will itterate over a range
+#  a range is a range of numbers. 
+# #range(stop), range(start,stop), range(start,stop,step) ex:range(1oo) will count all the way to 100   range(50,100) will start at 50    range(0,100,2)from 0 to 100 counting by two
+
+for i in range(5):
+  print(i)
+
+  animals = ["Sheep", "Deer", "Mouse"]
+
+  print(f"list:{animals}")
+
+  for animal in animals:
+       print(f"We saw a {animal}")
+
+nums = [5.1, 2.2, 5.3, 3.4, 8.5]
+
+# for n in nums:
+#   print(n + 1)
+
+
+for i in range(len(nums)):
+  print(nums[i])
+
+ # Debugging
+print(len(nums))
+print(range(5))
+
+# for i in range(0,5):
+#  print(nums[i])
+
+
+
+#200!
+#while loop
+
+# iteratues while a condition is true 
+# wjem tje condition becomes false, it stops
+x = 5
+
+while x < 10:
+ print(x)
+ x += 1
+
+ t = True
+ f = False
+ while t or f:
+   print("hi")
