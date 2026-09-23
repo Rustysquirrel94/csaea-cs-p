@@ -10,3 +10,14 @@ print("5" * 3, "22.5" + "5")
 print(2 ** 4, math.pow(2, 4))
 print(True + True + True)
 print(0.1 + 0.2 == 0.3)
+print(not f or t and f)
+print(nums[-len(nums)])
+x = 5
+while x < 10:
+    x += 2
+    print(x)
+
+
+
+for i in range(10, 0, -3):
+    print(i)
