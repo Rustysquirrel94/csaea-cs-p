@@ -77,7 +77,14 @@ spp = 8
 
 
 nop = (math.ceil(s * sps / spp ))
-nor = (math.remainder(s * sps / spp ))
+nor = ((nop * spp) - (s * sps))
 print(f" The amount of pizzas is {nop} and the remainer is {nor}")
 
+# 13
+savings = 0
+weekly_deposit = 15
+goal = 100
+ 
+while
+print()
 
