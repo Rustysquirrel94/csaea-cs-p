@@ -84,8 +84,14 @@ print(f" The amount of pizzas is {nop} and the remainer is {nor}")
 savings = 0
 weekly_deposit = 15
 goal = 100
-Week = 7 
-while savings <= goal: 
-    print(savings += weekly_deposit)
+W = 0
+while savings < goal: 
+   savings += weekly_deposit 
+   W += 1
 
+
+
+print(f"{W} Weeks")
+print(f"{savings} in savings")
+    
 
