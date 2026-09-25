@@ -53,4 +53,31 @@ cart = [12, 5, 30, 8]
 print(f"The total is {sum(cart)}")
 print(f"The number of items in the cart is {len(cart)}")
 
+# 7
+h = 50
+a = 11
+has_adult = True
+ 
+if h >= 48 and a >= 10:
+     print("You may Ride")   
+elif has_adult == True:
+     print("You May Ride with an adult")
+else:    
+    print("You May Not Ride")
+
+# 3
+F = 212
+C = (F - 32) * 5 / 9
+print(f"{F} farrenhieght is {(F - 32) * 5 / 9} degrees celcius")
+
+# 2
+s = 23
+sps = 2
+spp = 8
+
+
+nop = (math.ceil(s * sps / spp ))
+nor = (math.remainder(s * sps / spp ))
+print(f" The amount of pizzas is {nop} and the remainer is {nor}")
+
 
