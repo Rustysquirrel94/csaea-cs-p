@@ -208,7 +208,7 @@ while x < 10:
  print(x)
  x += 1
 
- t = True
+ t = False
  f = False
  while t or f:
    print("hi")
