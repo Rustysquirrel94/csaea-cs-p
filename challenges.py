@@ -27,7 +27,7 @@ last = "Lovelace"
 school = "CSAEA"
  
 
-print(f"Hello my name is {first} {last} and from {school}")
+print(f"Hello my name is {first} {last} from {school}")
 
 # 10
 groceries = ["milk", "eggs", "bread"]
@@ -68,7 +68,7 @@ else:
 # 3
 F = 212
 C = (F - 32) * 5 / 9
-print(f"{F} farrenhieght is {(F - 32) * 5 / 9} degrees celcius")
+print(f"{F} farrenhieght is {C} degrees celcius")
 
 # 2
 s = 23
@@ -95,3 +95,26 @@ print(f"{W} Weeks")
 print(f"{savings} in savings")
     
 
+#4 
+score = 101
+
+if 90 <= score >=100:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("D")
+elif score >= 100:
+    print("error")
+else:
+    print("F")
+
+
+#6
+
+plate = 4827
+
+if plate % 2 == 0:
+    print("park on east side")
+else:
+    print("park on west side")
