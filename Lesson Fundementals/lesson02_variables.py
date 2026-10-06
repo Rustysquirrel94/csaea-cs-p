@@ -69,10 +69,9 @@ print(count + num)
 x = 4
 y = "hello"
 
-temp = ()
+temp = x 
+x = y 
+y = temp
 
-x + temp = xtemp
-xtemp = y
 
-
-print(xtemp)
+print(x, y)
