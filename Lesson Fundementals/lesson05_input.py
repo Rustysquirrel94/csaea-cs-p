@@ -33,7 +33,7 @@ print(f"Them added is {num1 + num2}")
 # Ask the user for the diameter of a circle, then calculate and print the area.
 # pi radius squared 
 import math
-dia = int(input("What is the diameter"))
+dia = int(input("What is the diameter: "))
 rad = dia/2
 pi = math.pi
 area = int(math.pow((pi * rad),2))
@@ -44,6 +44,6 @@ print(f"the area is {area}")
 # Ask the user to enter how many sides the die should have.
 # Then simulate rolling the die once and print the result.
 import random
-typeofdi = int(input("How many sides does the die have:"))
+typeofdi = int(input("How many sides does the die have: "))
 roll =random.randint(1, typeofdi)
 print(f"You rolled a {roll}!")
