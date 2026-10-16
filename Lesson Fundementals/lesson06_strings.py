@@ -34,7 +34,7 @@ print("LAst seven ",word[-7:])
 print("Step through every second character",word[::2])
 print("string in reverse",word[::-1])
 
-last_name = "Lovelace"
+last_name = "    Lovelace"
 length = (len(last_name))
 print("Length of string is ", length)
 
@@ -63,6 +63,53 @@ print("The characters of 2-6 of your word is ",user[1:6] )
 # Enter your last name: Lovelace
 # Formatted name: Lovelace, Ada
 
+
+
 user_first = input("Enter first name:")
 user_second = input("Enter Last name:")
 print(f"{user_second}, {user_first}")
+
+
+
+
+
+charcter = "MonKeY GuY"
+print("\nLowercase:", charcter.lower())
+print("\nUpppercase:", charcter.upper())
+print("\nCap first letter:", charcter.capitalize())
+print("\nTitle format:", charcter.title())
+
+print()
+
+# FInd and replace test
+sentence = "the cow did a backflip over the moon"
+new_sentence = sentence.replace("backflip","frontflip")
+print(sentence,new_sentence)
+
+#Join and split
+groceries ="milk,eggs,bread,butter,peanut"
+print("\nOriginal string:",groceries)
+
+# split the string into a python list based on a "delimiter"
+items = groceries.split(",")
+print(items)
+
+# Join a list back together into a string
+joined = " and ".join(items)
+print(joined)
+print(type(items))
+print(type(joined))
+
+
+# Challenge 3: Word Mutation
+# Ask for a word and print it backwards, in uppercase, and lowercase.
+# Example output
+# Enter a word: Python
+# Uppercase: PYTHON
+# Lowercase: python
+# Backwards: nohtyP
+
+word = input("Enter word:")
+print("Uppercase:",word.upper())
+print("Lowercase:",word.lower())
+print("Backwards:",word[::-1])
