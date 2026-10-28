@@ -122,3 +122,64 @@ print("Correct!")
 #         user_input = ""
 # while user_input != "exit":
 #     user_input = input("Type 'exit' to escape")
+
+
+for i in range(10, 0, -3):
+    print(i)
+
+for i in range(3):
+    if i == 5:
+        break
+    else:
+        print("done")
+
+
+total = 0
+n = 1
+while total < 20:
+    total = total + n
+    n += 2
+
+print(total, n)
+
+count = 0
+for letter in "pineapple":
+    if letter in "aeiou":
+        count += 1
+        print(count)
+
+
+n = 10
+while n >= 0:
+    n -= 3 
+print("Escaped!")
+
+# Challenge 5: Write a guessing game with 5 tries and hints.
+# The computer picks a secret number from 1 to 20. The player gets 5 guesses.
+# The player will receive HINTS if they have an incorrect guess.
+#
+# preconditions: 
+# the random library; 
+# a random integer stored as the 'secret' that the player must guess.
+#
+# Pseudocode:
+#   repeat 5 times (use a for-loop with range):
+#       ask the player for a guess (convert it to an int!)
+#       if guess equals secret → print "Got it!" and stop the loop
+#       otherwise, if guess is bigger → print "Too high"
+#       otherwise → print "Too low"
+#   if the loop never stopped early → print "Out of guesses! It was" + secret
+
+import random
+secret = random.randint(1, 20)
+
+for p in range(5):
+    guess = int(input("Write your guess:"))
+    if guess == secret:
+        print("You got it Joe!")
+    elif guess > secret:
+        print("To High!")
+    elif guess < secret:
+        print("To Low!")
+    else:
+        print("Wrong")
