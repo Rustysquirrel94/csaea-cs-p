@@ -177,9 +177,13 @@ for p in range(5):
     guess = int(input("Write your guess:"))
     if guess == secret:
         print("You got it Joe!")
+        break
+    
     elif guess > secret:
-        print("To High!")
+        print("Too High!")
     elif guess < secret:
-        print("To Low!")
+        print("Too Low!")
     else:
-        print("Wrong")
+        print("Error")
+
+print("Game Over!")
