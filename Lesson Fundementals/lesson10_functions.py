@@ -67,10 +67,14 @@ print(f"\n{uno}\n{dos}\n{tres}\n{cuatro}")
 # result should be [2, 4, 8, 16, ]
 
 def doubler(num,times):
-    for n in range(times):
-     num *= 2   
     doubler_list = []
-    doubler_list.append(num,)
+    for n in range(times):
+     num *= 2  
+     doubler_list.append(num)
+    return doubler_list
+      
+    
+    
 
 answer = doubler(2,3)
 print(answer)
