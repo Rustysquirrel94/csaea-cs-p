@@ -68,13 +68,109 @@ print(f"\n{uno}\n{dos}\n{tres}\n{cuatro}")
 
 def doubler(num,times):
     doubler_list = []
+    number = num
+   
     for n in range(times):
-     num *= 2  
-     doubler_list.append(num)
+     number *= 2  
+     doubler_list.append(number)
     return doubler_list
       
+
+answer = doubler(2,5)
+print(answer)
+
+# For Challenges 1 - 3, first write pseudocode, then solve in code.
+ 
+# Challenge 1. 
+# Make a calculator with 4 procedures that accept two arguments each. 
+# 1) add any two numbers and print the result
+# 2) subtract any two numbers and print the result
+# 3) divide any two numbers and print the result
+# 4) multiply any two numbers and print the result 
+
+def adder(a,b):
+   print(a + b)
+   return a+b
+
+adder(1,2)
+
+def subtracter(a,b):
+   print(a - b)
+   return a-b
+
+
+def multiplyer(a,b):
+   print(a * b)
+   return a*b
+
+
+def divider(a,b):
+   print(a / b)
+   return a/b
+
+divider(8,2)
+
+def average(a,b,c,d,e):
+   add_it_up=a+b+c+d+e
+   add_it_up/=5
+   print(add_it_up)
+   return (add_it_up)
+
+average(1,28,4,16,92)
+
+def evenorodd(a):
+    if a % 2 ==0:
+        print("Even")
+        return("Even")
+    else:
+        print("Odd")
+        return("Odd")
+               
+               
+               
+evenorodd(8347)
+
+# Challenge 4
+# Use the pseudocode below to write code:
+# Make a function called "analyze_word" that counts how many vowels and consonants are in a word
+# Tools: uses a for loop, IF/THEN statement, "aeiou".
+
+# The function analyze_word accepts one argument, a single word (string):
+# Initialize two variables:
+# vowelCount set to 0
+# consonantCount set to 0
+# Use a loop to iterate through each character in the word.
+# Inside the loop, use an IF/ELSE statement:
+# If the character is a vowel (a, e, i, o, u), increment vowelCount.
+# Otherwise, increment consonantCount.
+# After the loop ends: 
+# 	return a string that states how many vowels and how many consonants are in the word.
+
+# Call the function with a sample one-word string and print the returned result outside the function
+
+def analyze_word(word):
+    list(word)
+    vowel ="aeiou"
+    vowel_count =(0)
+    consonant = "qwrtypsdfghjklzxcvbnm"
+    consonant_count =(0)
+
+    for vowel in word:
+        if vowel in word:
+            vowel_count += 1
+        print(vowel_count)
+        return vowel_count
+
+       
+    for consonant in word:
+        if consonant in word:
+            consonant_count += 1
+        print(vowel_count)
+        return vowel_count
     
+    print(f"There are {vowel_count} vowels and {consonant_count} in the word {word}")
+
     
 
-answer = doubler(2,3)
-print(answer)
+        
+analyze_word("house")
