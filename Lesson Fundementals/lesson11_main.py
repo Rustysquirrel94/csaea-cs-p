@@ -23,7 +23,7 @@ my_list=["apple", "banana", "cherry", "grape", "mango", "orange"]
 def my_procedure(word):
     # 1. Check the input. Keep asking if it's not a string or it's blank.
     print(type(word))
-    while type(word) == str: #use int for integers
+    while type(word) != str: #use int for integers
         print("Please enter a word")
         word = input("Type the word: ")
 
