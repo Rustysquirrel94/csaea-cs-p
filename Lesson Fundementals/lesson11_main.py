@@ -22,8 +22,29 @@ my_list=["apple", "banana", "cherry", "grape", "mango", "orange"]
 
 def my_procedure(word):
     # 1. Check the input. Keep asking if it's not a string or it's blank.
-    type(word)
+    print(type(word))
+    while type(word) == str: #use int for integers
+        print("Please enter a word")
+        word = input("Type the word: ")
 
+        # ===== YOUR ALGORITHM GOES HERE =====
+    # This is the "bottom" of top-down design: the detailed steps.
+    # Replace steps 2-4 with your own algorithm.
+    # It must use a loop AND an if statement, and the if
+    # should depend on the parameter.
+    # Ideas: check a quiz answer, add up a score, find the
+    # highest number, count matches, filter a list.
+   
+    # 2. Make an empty list for the results.
+    matches = []
+    # 3. Loop through the list.
+    for item in my_list: 
+        # 4. Decide: does this item contain the user's word?
+        if word in item:
+            matches.append(item)
+ # 5. Send the answer back to main().
+    return matches
+        
 
 
 
@@ -32,7 +53,7 @@ def main():
     print("Hi welcome to my program :)")
     word= input("Type a word:")
     
-    my_procedure(word)
-
+    result = my_procedure(word)
+    print(result)
 
 main()
